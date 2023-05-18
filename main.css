@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 640px;
+    margin: 80px auto;
+    width: 100%;
+
+}
+
+form {
+    margin-top: 20px;
+}
+
+input, button {
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: 70%;
+    resize: none;
+}
+
+button {
+    width: 20%;
+    cursor: pointer;
+    border: none;
+    background-color: #20b6bb;
+    color: #ffffff;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+button:hover {
+    background-color: #298588;
+}
+
+.error-message {
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: red;
+    display: none;
+}
