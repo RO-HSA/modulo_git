@@ -9,10 +9,6 @@ $(document).ready(function() {
     })
 
     $('#lista-tarefas').on('click', 'li', function() {
-        if($(this).hasClass('riscado')) {
-            $(this).removeClass('riscado');
-        } else {
-            $(this).addClass('riscado');
-        }
+        $(this).toggleClass('riscado');
     })
 })
