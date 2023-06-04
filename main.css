@@ -1,48 +1,44 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: aliceblue;
 }
 
 .container {
-    max-width: 640px;
-    margin: 80px auto;
+    max-width: 600px;
     width: 100%;
-
+    margin: 250px auto;
 }
 
-form {
-    margin-top: 20px;
+h1 {
+    margin-bottom: 24px;
 }
 
 input, button {
-    display: block;
-    margin-bottom: 8px;
     padding: 8px;
-    width: 70%;
-    resize: none;
 }
 
 button {
-    width: 20%;
     cursor: pointer;
-    border: none;
-    background-color: #20b6bb;
-    color: #ffffff;
+    font-weight: bold;
 }
 
-::-webkit-inner-spin-button {
-    display: none;
+ul {
+    margin-top: 18px;
+    margin-left: 16px;
 }
 
-button:hover {
-    background-color: #298588;
+ul li {
+    font-size: 16px;
+    margin-bottom: 6px;
+    cursor: pointer;
 }
 
-.error-message {
-    font-size: 12px;
-    margin-bottom: 8px;
-    color: red;
-    display: none;
+.riscado {
+    text-decoration: line-through;
 }
