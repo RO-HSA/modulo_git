@@ -5,6 +5,7 @@ $(document).ready(function() {
         const nomeTarefa = $('#nome-tarefa');
 
         $(`<li>${nomeTarefa.val()}</li>`).appendTo('ul');
+        $(nomeTarefa).val('');
     })
 
     $('#lista-tarefas').on('click', 'li', function() {
