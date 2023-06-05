@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de tarefas</title>
+    <title>Formulário de Cadastro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -12,15 +12,27 @@
 </head>
 <body>
     <div class="container">
-        <h1>Lista de tarefas</h1>
+        <header>
+            <h1>Formulário de cadastro</h1>
+        </header>
         <form>
-            <input type="text" id="nome-tarefa" required placeholder="Nome da tarefa">
-            <button type="submit">Cadastrar</button>
+            <label for="nome-completo">Nome completo</label>
+            <input type="text" name="nomeCompleto" id="nome-completo" required>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required>
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" required>
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" required>
+            <label for="endereco">Endereço</label>
+            <input type="text" name="endereco" id="endereco" required>
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep" required>
+            <button type="submit">Enviar</button>
         </form>
-        <ul id="lista-tarefas">
-        </ul>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="./main.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
