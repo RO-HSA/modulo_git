@@ -37,7 +37,3 @@ form button {
     color: #fff;
     cursor: pointer;
 }
-
-::-webkit-inner-spin-button {
-    display: none;
-}
