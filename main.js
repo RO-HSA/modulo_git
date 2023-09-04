@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const profileAvatar = document.querySelector('.profile-avatar');
     const profileName = document.querySelector('.profile-name');
-    const profileUserName = document.querySelector('.profile-username').textContent;
+    const profileUserName = document.querySelector('.profile-username').innerText;
     const profileLink = document.querySelector('.profile-link');
     const numeroRepositorios = document.getElementById('numero-repositorios');
     const numeroSeguidores = document.getElementById('numero-seguidores');
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .then((response) => {
             profileAvatar.src = response.avatar_url;
-            numeroRepositorios.textContent = response.public_repos;
-            numeroSeguidores.textContent = response.followers;
-            numeroSeguindo.textContent = response.following;
+            numeroRepositorios.innerText = response.public_repos;
+            numeroSeguidores.innerText = response.followers;
+            numeroSeguindo.innerText = response.following;
             profileLink.href = response.html_url;
-            profileName.textContent = response.name;
+            profileName.innerText = response.name;
         })
 })
