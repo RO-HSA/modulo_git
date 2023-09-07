@@ -18,7 +18,7 @@ const alunos = [
 ];
 
 const alunosNotaMaiorIgualSeis = alunos.filter((aluno) => {
-    return aluno.nota >= 6
+    return aluno.nota >= 6;
 });
 
 console.log(alunosNotaMaiorIgualSeis);
